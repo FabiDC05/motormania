@@ -28,6 +28,9 @@
     opacity: 0.8;
 }
 
+.slide-blur {
+    -webkit-mask-image: linear-gradient(90deg, transparent,#fff 20%, #fff 80%, transparent);    
+}
 .slide-track:hover{
     animation-play-state: paused;
 }
