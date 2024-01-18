@@ -212,5 +212,7 @@ Nos saldan los archivos nuevos, y los modificados, y si ponemos el cursor encima
 
 ![Almacenar provisionalmente](/capturas/almacenar.png)
 
+Los archivos pasara a **Cambios "stagged"**. Una vez ahí, podremos escribir en la parte superior un mensaje para nuestro commit. En este caso yo pondre "añado capturas". Y luego debemos pulsar el botón de **Confirmación**.
 
 
+![Añadir mensaje](/capturas/añadomensaje.png)
