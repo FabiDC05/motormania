@@ -13,9 +13,18 @@ IES Aguadulce, Formación Profesional Grado Superior
 
 #### Enlace a la web:
 
-Enlace de la página [Motormania]().
+Enlace de la página [Motormania](https://fabidc05.github.io/motormania/).
 
 ## Uso de Git mediante la terminal git bash:
+
+#### Antes de nada comprobaremos la versión de Git:
+
+Con el comando `git --version` comprobaremos la version, que en este caso es **git 2.42.0.windows.2**.
+
+```
+PS C:\Users\maniana\Downloads\motormania> git --version
+git version 2.42.0.windows.2
+```
 
 #### Creación del repositorio en nuestro ordenador (init)
 
@@ -102,23 +111,31 @@ Date:   Tue Jan 16 09:47:59 2024 +0100
 
 Vamos a crear el repositorio que estamos usando en Github para mostrar los commit de forma gráfica. Para ello debemos entrar en Github, iniciar sesión y en el apartado de la izquierda nos aparecen nuestros repositorios actuales. En la parte superior hay un botón que pone **New**, al pulsar en el entraremos en el apartado de crear un repositorio nuevo.
 
-![Ejemplo de texto alternativo](/capturas/crearrepositorio.png)
+![Creando el repositorio](/capturas/crearrepositorio.png)
 
 
 A continuación procedemos a elegir el nombre de nuestro repositorio, elegimos si es público y privado, y pulsamos el botón de **crear un nuevo repositorio**:
 
-![Segunda captura](/capturas/crearrepositorio2.png)
+![Nombre del repositorio](/capturas/crearrepositorio2.png)
+
+
+#### Añadir el remoto al repositorio local (branch, remote):
 
 Nos apareceran los comandos para aplicar el repositorio remoto desde la terminal con el comando `git remote add origin` y el enlace de nuestro repositorio.
-
 ```
 PS C:\Users\maniana\Downloads\motormania> git remote add origin https://github.com/FabiDC05/motormania.git
 ```
 
-Ahora usamos el comando `git branch -M main` y `git push -u origin main`
-
+Ahora usamos el comando `git branch -M main`.
 ```
 PS C:\Users\maniana\Downloads\motormania> git branch -M main
+```
+
+#### Subir el repositorio a Github (push):
+
+El comando `git push` en Git se utiliza para cargar cambios locales en un repositorio remoto. En este caso lo usaremos para subir el repositorio.
+
+```
 PS C:\Users\maniana\Downloads\motormania> git push -u origin main
 Enumerating objects: 17, done.
 Counting objects: 100% (17/17), done.
@@ -130,3 +147,70 @@ To https://github.com/FabiDC05/motormania.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 ```
+
+#### Comprobar que está subido a Github:
+
+![Comprobado](/capturas/comprobado.png)
+
+En este caso comprobamos que el repositorio se ha subido correctamente y estan todos los archivos.
+
+
+#### IMPORTANTE: Agregamos al usuario del profesor como colaborador del repositorio:
+
+![Settings](/capturas/settings.png)
+
+Entramos en el apartado de settings de Github en nuestro repositorio y accedemos al apartado de **access**.
+
+![Añado a Jmoba](/capturas/añadojmoba.png)
+
+Ahora pulsamos el botón de **add people** y añadimos el usuario que queremos invitar, en nuestro caso Jmoba.
+Una vez realizado esto el usuario ya estará invitado a nuestro repositorio.
+
+## Publicación en Github Pages:
+
+#### Configurar el repositorio para que publique el directorio raíz en Github Pages:
+
+Entramos en el apartado de settings de Github en nuestro repositorio y accedemos al apartado de **pages**.
+
+![Settings page](/capturas/settingspage.png)
+
+A continuación debemos agregar el main para que detecte el index.
+
+![Añado a main](/capturas/añadimosmain.png)
+
+Nos aparecera la opción de visitar sitio. Pulsaremos para comprobar que la página se detecta correctamente.
+
+![Visitar sitio](/capturas/visitar%20sitio.png)
+
+#### Mostrar los despliegues (deployments):
+
+En la parte inferior derecha de la pantalla principal de nuestro repositorio aparecerá un apartado llamado **deployments**.
+
+![Apartado Deployments](/capturas/deployments.png)
+
+Al pulsar nos llevara a un apartado en el que podremos ver lso despliegues:
+
+![Muestro Deployments](/capturas/muestrodeployments.png)
+
+#### Mostrar la página web.
+
+![Pagina motormania](/capturas/paginamotormania.png)
+
+**Esta sería la página abierta desde el repositorio como podemos obersvar en el url**
+
+## Uso de Git mediante la interfaz de VSCode:
+
+#### Creación de otro commit:
+
+Una vez dentro de Visual Studio Code, podemos ver que al realizar cambios en los archivos de nuestro repositorio, o al crear o añadir archivos, en el apartado de **control de código de fuente** apareceran los cambios que vamos realizando. Para poder aplicar esos cambios deberemos realizar unos pasos.
+
+Primero, al acceder al apartado de **control de código de fuente** veremos los cambios.
+
+![Apartado contros](/capturas/apartado.png)
+
+Nos saldan los archivos nuevos, y los modificados, y si ponemos el cursor encima apareceran diferentes iconos. Con el de **+** podemos almacenar provisionalmente los archivos para un commit.
+
+![Almacenar provisionalmente](/capturas/almacenar.png)
+
+
+
