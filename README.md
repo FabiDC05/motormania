@@ -212,7 +212,24 @@ Nos saldan los archivos nuevos, y los modificados, y si ponemos el cursor encima
 
 ![Almacenar provisionalmente](/capturas/almacenar.png)
 
+#### Subir el repositorio a Github:
+
 Los archivos pasara a **Cambios "stagged"**. Una vez ahí, podremos escribir en la parte superior un mensaje para nuestro commit. En este caso yo pondre "añado capturas". Y luego debemos pulsar el botón de **Confirmación**.
 
 
 ![Añadir mensaje](/capturas/añadomensaje.png)
+
+Los cambios se sincronizarán. Si no lo hacen, deberemos pulsar el botón con la ruedita para sincronizar los datos en el repositorio.
+
+#### Comprobar que está subido a Github:
+
+Si entramos en el menu principal de nuestro repositorio (code) encontramos los archivos y el mensaje con el que añadimos el commit.
+
+![Comprobamos que funciona el  commit](/capturas/comprobamoscommit.png)
+
+
+#### Ver el listado de commit desde Github:
+
+Por último, veremos el listado de commits que hemos realizado.
+
+![Commits](/capturas/commits.png)
