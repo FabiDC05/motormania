@@ -81,6 +81,7 @@ header {
 }
 
 .nav  h1{
+    padding-left: 5px;
     color: #ffd734;
     transition-duration: 0.8s;
 }
