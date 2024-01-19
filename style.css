@@ -12,12 +12,14 @@ body, html{
 
 body{
     width: 100%;
-    background-color: #1f478b;
+    background-color: #464646;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logomotormania {
     text-align: center;
     height: 232px;
+    scale: 2.3;
   }
   
 img {
@@ -38,6 +40,7 @@ header {
     background-image: url(https://d17nbwpy4av6jl.cloudfront.net/uploads/web/resources/resource5d7a63163a8c2_automobilsgeacom_automobils-gea-banner-alfa-romeo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%;
     position: fixed;
     width: 100%;
     display: flex;
@@ -87,6 +90,11 @@ header {
     margin: 0 auto;
 }
 
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .marcas {
     height: 250px;
     margin: auto;
@@ -94,77 +102,9 @@ header {
     text-align: center;
     vertical-align: middle;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-.footer {
-    background-color: #13274b;
-    padding: 80px 0;
-    border-top: 10px solid #1a3363d8;
-    margin-top: auto;
-}
-
-.footer-row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-links{
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-links h4{
-    font-size: 20px;
-    color: white;
-    margin-bottom: 25px;
-    font-weight: bold;
-    border-bottom: 3px solid #ffd734;
-    padding-bottom: 10px;
-    display: inline-block;
-}
-
-.footer-links ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #4d6ea8;
-    display: block;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-}
-
-.footer-links ul li a:hover{
-    color: #4086ff;
-    padding-left: 6px;
-}
-
-.social-links a{
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
-}
-
-.social-links a:hover{
-    background-color: #ffd734;
-    color: #1f478b;
-}
-
-@media(max-width:991px){
-    .footer-row{
-        text-align: center;
-    }
-    .footer-links{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-}
 
 .introduccion{
     background-image: url(https://www.autotrade.es/images/img-nuestro-compromiso.jpg);
@@ -174,10 +114,11 @@ header {
     font-size: 30px;
     color: white;
     text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    box-shadow: 3px 0px 10px black;
 }
 
 .card-container{
-    text-align: center;
+    text-align: justify;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -186,4 +127,134 @@ header {
     padding: 55px;
     background: #fafafa10;
     backdrop-filter: blur(0.4rem);
+}
+
+.principal {
+    height: 550px auto;
+    width: 100%;
+    display: flex;
+}
+
+.vehiculos {
+    height: 500px;
+    width: 800px;
+    margin: 50px 20px 0px 20px;
+    border-radius: 2rem;
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+}
+
+.vehiculos:hover {
+    width: 1500px;
+    height: 560px;
+    margin-bottom: 50px;
+}
+
+.vehiculos:hover .bmwm3 img{
+    content:url(img/carabmw.png);
+}
+
+.vehiculos:hover .mercedesamg img{
+    content:url(img/caramercedesamg.png);
+    scale: 0.8;
+}
+
+.vehiculos:hover .mercedesvito img{
+    content:url(img/caramercedesvito.png);
+}
+
+
+.bmwm3{
+    background-image: url(https://s.aolcdn.com/os/ab/_cms/2021/06/25114921/IMG_2315.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.mercedesamg{
+    background-image: url(https://carnovo.com/wp-content/uploads/2018/03/18C0090_068.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.mercedesvito{
+    background-image: url(https://www.mercedes-benz.es/content/spain/es/vans/models/vito/4477-xz1/overview/_jcr_content/root/responsivegrid/tabs_115128581/tabitem/hotspot_module/hotspot_simple_image.component.damq1.3359493138269.jpg/mercedes-benz-vito-tourer-pi-pages-overview-SSPIP127765_3302x1858-02-2023_V2.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: #fafafa10;
+    backdrop-filter: blur(1.4px);
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.contenido h1{
+    border-radius: 2rem;
+    background: #000000ad;
+    text-align: center;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bmwm3 img{
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    transition: opacity 0.5 ease;
+}
+
+.mercedesamg img{
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.mercedesvito img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.contenido p{
+    border-radius: 2rem;
+    background: #000000ad;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.contenido ul{
+    display: flex;
+    list-style: none;
+}
+.contenido li {
+    border-radius: 2rem;
+    background: #000000ad;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
 }
