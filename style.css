@@ -13,13 +13,6 @@ body, html{
 body{
     width: 100%;
     background-color: #1f478b;
-    font-family: 'Poppins', sans-serif;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 #logomotormania {
@@ -42,8 +35,7 @@ header {
 }
 
 .nav {
-    background-image: url(https://fotografias.lasexta.com/clipping/cmsimages01/2018/02/27/42118892-F641-4C7B-B2C4-183207F31C62/98.jpg?crop=1139,641,x150,y0&width=1900&height=1069&optimize=high&format=webply);
-    background-position: center;
+    background-image: url(https://d17nbwpy4av6jl.cloudfront.net/uploads/web/resources/resource5d7a63163a8c2_automobilsgeacom_automobils-gea-banner-alfa-romeo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: fixed;
@@ -52,17 +44,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 25px;
-    transition: all 0.2s ease;
     z-index: 3;
-    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 3px 10px black;
 }
 
-.nav.active{
-    background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(20px);
-    padding: 15px;
-    z-index: 3;
-}
 .menu {
     display: flex;
 }
@@ -78,10 +63,11 @@ header {
     font-weight: bold;
     padding: 10px;
     border-radius: 15px;
+    font-size: 20px;
 }
 
 .nav  h1{
-    padding-left: 5px;
+    margin-left: 50px;
     color: #ffd734;
     transition-duration: 0.8s;
 }
@@ -96,20 +82,19 @@ header {
     color: #13274b;    
 }
 
-.scrol{
-    height: 10px;
-}
-
 #logomotormania {
     z-index: 1;
     margin: 0 auto;
 }
 
-
-
-.contenedor{
-    max-width: 1200px;
-    margin: 0 auto;
+.marcas {
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .footer {
