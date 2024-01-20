@@ -146,8 +146,6 @@ header {
 
 .vehiculos:hover {
     width: 1500px;
-    height: 560px;
-    margin-bottom: 50px;
 }
 
 .vehiculos:hover .bmwm3 img{
@@ -161,6 +159,18 @@ header {
 
 .vehiculos:hover .mercedesvito img{
     content:url(img/caramercedesvito.png);
+}
+
+.vehiculos:hover .hondahornet img{
+    content:url(img/carahonda.png);
+}
+
+.vehiculos:hover .kawasakininja img{
+    content:url(img/carakawasaki.png);
+}
+
+.vehiculos:hover .yamahamt img{
+    content:url(img/carayamaha.png);
 }
 
 
@@ -194,6 +204,36 @@ header {
     border-radius: 2rem;
 }
 
+.hondahornet{
+    background-image: url(https://www.honda.es/content/dam/central/motorcycles/street/hornet/overview2/Honda-hornet-overview-08-desktop-16x9.jpg/_jcr_content/renditions/c2_r.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.kawasakininja{
+    background-image: url(https://www.motociclismo.es/uploads/s1/66/12/64/8/article-kawasaki-ninja-400-deportivdad-50cv-pensando-mundial-ssp300-59f041cf9392c.jpeg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.yamahamt{
+    background-image: url(https://www.motosausio.com/wp-content/uploads/2017/06/yamaha-mt-10-sp.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
 .contenido{
     width: 100%;
     height: 100%;
@@ -218,7 +258,6 @@ header {
     height: 250px;
     width: 400px;
     object-fit: cover;
-    transition: opacity 0.5 ease;
 }
 
 .mercedesamg img{
@@ -228,6 +267,24 @@ header {
 }
 
 .mercedesvito img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.hondahornet img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.kawasakininja img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.yamahamt img {
     height: 250px;
     width: 400px;
     object-fit: cover;
@@ -243,13 +300,15 @@ header {
     color: #ffffff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
+    height: auto;
+
 }
 
-.contenido ul{
+/* .contenido ul{
     display: flex;
     list-style: none;
-}
-.contenido li {
+} */
+/* .contenido li {
     border-radius: 2rem;
     background: #000000ad;
     color: #ffffff;
@@ -257,4 +316,4 @@ header {
     padding: 20px;
     margin: 10px;
     justify-content: center;
-}
+} */
