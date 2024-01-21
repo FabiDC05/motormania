@@ -304,16 +304,60 @@ header {
 
 }
 
-/* .contenido ul{
-    display: flex;
-    list-style: none;
-} */
-/* .contenido li {
+.productos {
+    height: 1500px;
+    margin: 50px;
+    background:url(https://www.emesa-m30.es/wp-content/uploads/2021/11/que-es-una-carretera-convencional.jpg);
+    background-size: 3000px;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 2rem;
-    background: #000000ad;
-    color: #ffffff;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-    margin: 10px;
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+}
+
+.productos h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+td img{
+    width: 350px;
+    height: 200px;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+
+table, th, td{
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+.tablaproductos{
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+}
+
+thead th {
+    background-color: #d5d1defe;
+    top: 0;
+    left: 0;
+}
+
+.tabla {
     justify-content: center;
-} */
+    align-items: center;
+    display: flex;
+    width: 95%;
+    height: 1300px;
+    background-color: rgba(107, 107, 107, 0.733);
+    margin: 10px auto;
+    border-radius: .6rem;
+}
