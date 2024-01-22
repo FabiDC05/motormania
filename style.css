@@ -146,8 +146,6 @@ header {
 
 .vehiculos:hover {
     width: 1500px;
-    height: 560px;
-    margin-bottom: 50px;
 }
 
 .vehiculos:hover .bmwm3 img{
@@ -161,6 +159,18 @@ header {
 
 .vehiculos:hover .mercedesvito img{
     content:url(img/caramercedesvito.png);
+}
+
+.vehiculos:hover .hondahornet img{
+    content:url(img/carahonda.png);
+}
+
+.vehiculos:hover .kawasakininja img{
+    content:url(img/carakawasaki.png);
+}
+
+.vehiculos:hover .yamahamt img{
+    content:url(img/carayamaha.png);
 }
 
 
@@ -194,6 +204,36 @@ header {
     border-radius: 2rem;
 }
 
+.hondahornet{
+    background-image: url(https://www.honda.es/content/dam/central/motorcycles/street/hornet/overview2/Honda-hornet-overview-08-desktop-16x9.jpg/_jcr_content/renditions/c2_r.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.kawasakininja{
+    background-image: url(https://www.motociclismo.es/uploads/s1/66/12/64/8/article-kawasaki-ninja-400-deportivdad-50cv-pensando-mundial-ssp300-59f041cf9392c.jpeg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.yamahamt{
+    background-image: url(https://www.motosausio.com/wp-content/uploads/2017/06/yamaha-mt-10-sp.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
 .contenido{
     width: 100%;
     height: 100%;
@@ -218,7 +258,6 @@ header {
     height: 250px;
     width: 400px;
     object-fit: cover;
-    transition: opacity 0.5 ease;
 }
 
 .mercedesamg img{
@@ -228,6 +267,24 @@ header {
 }
 
 .mercedesvito img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.hondahornet img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.kawasakininja img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.yamahamt img {
     height: 250px;
     width: 400px;
     object-fit: cover;
@@ -243,18 +300,135 @@ header {
     color: #ffffff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
+    height: auto;
+
 }
 
-.contenido ul{
-    display: flex;
-    list-style: none;
-}
-.contenido li {
+.productos {
+    height: 1500px;
+    margin: 50px;
+    background:url(https://www.emesa-m30.es/wp-content/uploads/2021/11/que-es-una-carretera-convencional.jpg);
+    background-size: 3000px;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 2rem;
-    background: #000000ad;
-    color: #ffffff;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-    margin: 10px;
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+}
+
+.productos h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+td img{
+    width: 350px;
+    height: 200px;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+
+table, th, td{
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+.tablaproductos{
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+}
+
+thead th {
+    background-color: #d5d1defe;
+    top: 0;
+    left: 0;
+}
+
+.tabla {
     justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 95%;
+    height: 1300px;
+    background-color: rgba(107, 107, 107, 0.733);
+    margin: 10px auto;
+    border-radius: .6rem;
+}
+
+form {
+    margin: 0 10% 0 10%;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-coche-lujo-deportivo-oscuro_103577-7774.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+fieldset {
+    background-color: rgba(41, 41, 41, 0.712);
+    margin: 20px;
+    border-radius: 2rem;
+}
+
+legend {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-left: 150px; 
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-radius: 2rem;
+}
+
+input[type="text"], input[type="email"], select, textarea{
+    width: 75%;
+}
+
+label {
+    width: 20%;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+ 
+input[type=checkbox]{
+    display: inline-block;
+    margin:15px 15px 0 0;
+}
+
+label#checkbox {
+    display: inline;
+    width: 20%;
+    text-align: left;
+    padding-right: 20px;
+}
+
+input[type=radio]{
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+textarea{
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+input[type=reset], input[type=submit]{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 170px;
+    padding: 0 200px;
+    display: inline-block;
 }
